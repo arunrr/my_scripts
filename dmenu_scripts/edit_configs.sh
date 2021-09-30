@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# A script to easily edit config files throught dmenu
+
+
 # Specify editor of choice to open the config file
 editor='nvim'
 
