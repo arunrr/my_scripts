@@ -16,6 +16,7 @@ config_files+=(['alacritty']=$HOME/.config/alacritty/alacritty.yml
 	       ['bspwm']=$HOME/.config/bspwm/bspwmrc
 	       ['sxhkd']=$HOME/.config/sxhkd/sxhkdrc
 	       ['polybar']=$HOME/.config/polybar/config
+	       ['bash']=$HOME/.bashrc
 
 	      )
 
