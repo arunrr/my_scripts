@@ -26,7 +26,7 @@ search_engine=$(for key in "${!search_engines[@]}"
 		done | dmenu -i -l 10 -p 'Search in') || exit 1
 
 # Get keywords to search from dmenu
-search_term=$(echo $selected_search_engine | dmenu -p 'Enter search term')
+search_term=$(echo $search_engine | dmenu -p 'Enter search term')
 
 # If search term is empty exit
 if [ -z $search_term ];then
