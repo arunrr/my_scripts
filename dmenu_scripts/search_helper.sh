@@ -23,10 +23,10 @@ search_engines+=(['Google']=$web_protocol.google.com/search?q=
 search_engine=$(for key in "${!search_engines[@]}"
 		do
 		  echo $key
-		done | dmenu -i -l 10 -p 'Search in') || exit 1
+		done | rofi -dmenu -i -p 'Search in') || exit 1
 
 # Get keywords to search from dmenu
-search_term=$(echo $search_engine | dmenu -p 'Enter search term')
+search_term=$(echo $search_engine | rofi -dmenu -i -p 'Enter search term')
 
 # If search term is empty exit
 if [ -z $search_term ];then

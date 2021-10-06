@@ -4,7 +4,7 @@
 
 
 # Specify editor of choice to open the config file
-editor='nvim'
+editor='emacs'
 
 # Specify terminal of choice
 term='alacritty'
@@ -24,7 +24,7 @@ config_files+=(['alacritty']=$HOME/.config/alacritty/alacritty.yml
 config_file=$(for key in "${!config_files[@]}"
 	      do
 		echo $key
-	      done | dmenu -i -l 10 -p 'Edit Config')
+	      done | rofi -dmenu -i -p 'Edit Config')
 
 # if there exists a config path for the selected file name then edit the file
 if [ -v config_files[$config_file] ];then
