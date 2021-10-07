@@ -1,3 +1,3 @@
-# Dmenu Scripts
+# Rofi Scripts
 
-#### Bash scripts using dmenu as frontend
+#### Bash scripts using rofi as frontend
